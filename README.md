@@ -56,3 +56,9 @@ CRUD route
 - update the math sections
 - delete previously created math pages
 
+![](/wireframes/1.png)
+![](/wireframes/2.png)
+![](/wireframes/3.png)
+![](/wireframes/4.png)
+![](/wireframes/5.png)
+![](/wireframes/Blank%20diagram.png)
