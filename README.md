@@ -41,3 +41,18 @@ Model/User.js
 
 
 ---------------------------------------------------
+
+Potentially useful API's
+- xMATH
+- remoteCalc
+- OSF
+- newton (might take the cake)
+
+---------------------------------------------------
+
+CRUD route
+- create an acount
+- show the pages owned by that account
+- update the math sections
+- delete previously created math pages
+
