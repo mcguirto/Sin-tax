@@ -15,14 +15,14 @@ As a user I would like to
 
 
 -------------------PLANNING--------------
-Models/topic:
+Sections/topic:
 |  name     |  String   |
 |  topic  |  String   |
 |  isCalculus     |  Boolean  |
 
 
 ----------------------------------------------
-Models/:
+Sections/:
 |   name     | String   |
 |   category  | String   |
 |   isCalculus     | Boolean  |
@@ -55,6 +55,19 @@ CRUD route
 - show the pages owned by that account
 - update the math sections
 - delete previously created math pages
+
+| NAME  |   Path            |  HTTP VERB  |       PURPOSE 
+|-------------------------------------------------------------
+|Index  | /Sections         |     GET     | Displays all sections
+|New    | /Sections/new     |     GET     | New page for new section
+|Ceate  | /Sections         |    POST     | Creates new section
+|Show   | /Sections/:id     |     GET     | Shows one section
+|Edit   | /Sections/:id/edit|     GET     | Edit one section
+|Update | /Sections/:id     |     PUT     | updates a single section
+|Destroy| /Sections/:id     |    DELETE   | Deletes a chosen section
+
+
+
 
 ![](/wireframes/1.png)
 ![](/wireframes/2.png)
