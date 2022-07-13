@@ -12,3 +12,32 @@ As a user I would like to
 - should be able to swich between pages to access all of their saved formulae and notes
 - should ba able to delete notes sections when needed
 - should be able to edit pages
+
+
+-------------------PLANNING--------------
+Models/topic:
+|  name     |  String   |
+|  topic  |  String   |
+|  isCalculus     |  Boolean  |
+
+
+----------------------------------------------
+Models/:
+|   name     | String   |
+|   category  | String   |
+|   isCalculus     | Boolean  |
+
+----------------------------------------------
+
+Model/User.js
+    username:
+    |    type      |  String  |
+    |   required  |  Boolean   |  
+    |   unique    |  Boolean    |
+   
+    password:
+    |   type      | String  |
+    |   required  | Boolean    |
+
+
+---------------------------------------------------
