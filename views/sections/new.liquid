@@ -1,0 +1,36 @@
+{% layout 'layout.liquid' %}
+
+{% block content %}
+<div class="container-md">
+    <form action="/sections" method="POST">
+        <fieldset>
+            <legend>Create A New <Section></Section></legend>
+            <label class="form-label">Name:</label>
+            <input 
+                class="form-control" 
+                type="text" 
+                name="name" 
+                placeholder="enter name"
+            >
+            <label class="form-label">Color:</label>
+            <input 
+                class="form-control" 
+                type="text" 
+                name="color" 
+                placeholder="enter color"
+            >
+            <label class="form-label">Is Calculus?</label>
+            <input 
+                class="form-check-input" 
+                type="checkbox" 
+                name="isCalculus"
+            >
+        </fieldset>
+        <input 
+            type="submit" 
+            value="Create New Section" 
+            class="btn btn-success"
+        >
+    </form>
+</div>
+{% endblock %}

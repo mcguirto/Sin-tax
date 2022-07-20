@@ -1,0 +1,29 @@
+{% layout 'layout.liquid' %}
+
+{% block content %}
+<div>
+    <h2 class="display-6">All Sections</h2>
+    <div class="row">
+
+        {% for section in sections %}
+            <div class="card" style="width: 18rem">
+                <h5 class="card-header">{{section.name}}</h5>
+                <div class="card-body">
+                    <h6 class="card-title">
+                        {% if section.isCalculus %}
+                            Yes
+                        {% else %}
+                            No
+                        {% endif %}
+                    </h6>
+                    <p class="card-text">
+                        This color of this {{section.name}} is {{section.color}}
+                    </p>
+                    
+                    <a href="/sections/{{section._id}}" class="btn btn-info">View {{section.name}}</a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
