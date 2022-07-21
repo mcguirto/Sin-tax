@@ -2,7 +2,7 @@
 
 {% block content %}
 <div class="container-md">
-    <form action="/fruits/{{section._id}}?_method=PUT" method="POST">
+    <form action="/sections/{{section._id}}?_method=PUT" method="POST">
         <fieldset>
             <legend>Edit This {{section.name}}</legend>
             <label class="form-label">Name:</label>
@@ -26,13 +26,13 @@
                 type="checkbox" 
                 name="isCalculus" 
                 class="form-check-input"
-                {% if fruit.readyToEat %} 
+                {% if section.isCalculus %} 
                     checked
                 {% endif %}
             >
         </fieldset>
         <div class="btn-group">
-            <input type="submit" value="Edit {{ fruit.name }}" class="btn btn-success">
+            <input type="submit" value="Edit {{ section.name }}" class="btn btn-success">
             <a href="/sections" class="btn btn-warning">Nevermind</a>
         </div>
     </form>

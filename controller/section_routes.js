@@ -5,7 +5,7 @@ const Section = require('../models/section')
 router.delete('/:id', (req, res) => {
     const sectionId = req.params.id
 
-    Fruit.findByIdAndRemove(sectionId)
+    Section.findByIdAndRemove(sectionId)
         .then(section => {
             res.redirect('/sections')
         })
@@ -27,11 +27,11 @@ router.get('/:id/edit', (req, res) => {
 
 
 router.put('/:id', (req, res) => {
-    const fruitId = req.params.id
+    const sectionId = req.params.id
 
     req.body.isCalculus = req.body.isCalculus === 'on' ? true : false
 
-    Fruit.findByIdAndUpdate(sectionId, req.body, { new: true })
+    Section.findByIdAndUpdate(sectionId, req.body, { new: true })
         .then(section => {
             res.redirect(`/sections/${section._id}`)
         })
